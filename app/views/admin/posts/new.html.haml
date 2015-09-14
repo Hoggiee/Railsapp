@@ -1,0 +1,6 @@
+- content_for :breadcrumb do
+    %li
+        = link_to 'Lista Kategorii', admin_categories_path
+    %li.active Nowa Kategoria
+
+= render 'admin/posts/form', :url => admin_posts_path(@post)
