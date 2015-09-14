@@ -5,27 +5,29 @@ class Admin::PostsController < AdminController
   def index 
     @posts = Post.all
   end
-
   
   def show
   end
 
+
   def new
     @post = Post.new
   end
+  
 
   def create
-     @post = Post.new(post_params)
+    @post = Post.new(post_params)
     if @post.save
       redirect_to admin_posts_path, notice: "Post created"
     else
       render action: "new"
     end
   end
+  
 
   def edit
-    
   end
+  
 
   def update
     if @post.update_attributes(post_params)
@@ -34,6 +36,7 @@ class Admin::PostsController < AdminController
       render action: "edit"
     end
   end
+  
 
   def destroy 
     if @post.delete
@@ -42,6 +45,7 @@ class Admin::PostsController < AdminController
       redirect_to admin_posts_path, notice: "Error while deleting"
     end
   end
+  
 
   protected
 
@@ -50,7 +54,7 @@ class Admin::PostsController < AdminController
   end
 
   def post_params
-    params.require(:post).permit(:title, :body)
+    params.require(:post).permit(:title, :body, :category_id)
   end
 
 end

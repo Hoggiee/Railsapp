@@ -2,6 +2,7 @@ class Admin::CategoriesController < AdminController
     
     before_action :set_category, :only =>[:show, :edit, :destroy, :update]
     
+    
     def index
         @categories = Category.all
         respond_to do |format|
@@ -10,6 +11,7 @@ class Admin::CategoriesController < AdminController
         end
     end
     
+    
     def show
         respond_to do |format|
            format.html
@@ -17,13 +19,14 @@ class Admin::CategoriesController < AdminController
         end    
     end
     
+    
     def new
         @category = Category.new
     end
     
+    
     def create
         @category = Category.new(category_params)
-        
         respond_to do |format|
             if @category.save
                 format.html {redirect_to admin_categories_path, notice: 'Category created'}
@@ -33,12 +36,12 @@ class Admin::CategoriesController < AdminController
         end    
     end
     
+    
     def edit
-
     end
     
+    
     def update
-        
         respond_to do |format|
             if @category.update{post_params}
                 format.html {redirect_to admin_post_path, notice: "Category updated"}
@@ -46,16 +49,18 @@ class Admin::CategoriesController < AdminController
                 format.html {render action: 'edit', alert: "Error while editing"}
             end
         end  
-        
     end
     
+    
     def destroy 
-     if @category.delete
-          redirect_to admin_categories_path, notice: "Category Deleted"
-      else
-        redirect_to admin_categories_path, notice: "Error while deleting"
-     end
+        if @category.delete
+            redirect_to admin_categories_path, notice: "Category Deleted"
+        else
+            redirect_to admin_categories_path, notice: "Error while deleting"
+        end
     end
+    
+    
     
     protected
     

@@ -1,8 +1,8 @@
 - content_for :breadcrumb do
     %li.active Lista Kategorii
 
-= link_to 'Add category', new_admin_category_path
+= link_to 'Dodaj kategorię', new_admin_category_path
 
 %ul
     - @categories.each do |category|
-        %li= link_to category.name, admin_category_url(category)
+        %li= category.name

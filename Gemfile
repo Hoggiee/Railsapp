@@ -38,7 +38,9 @@ end
   gem "haml-rails"
   gem "noty-rails"
   gem "git"
-
+  gem "select2-rails"
+  gem "devise"
+  
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
