@@ -1,6 +1,6 @@
 class Admin::CategoriesController < AdminController
     
-    before_action :set_category, :only =>[:new ,:show, :edit, :destroy, :update]
+    before_action :set_category, :only =>[:show, :edit, :destroy, :update]
     
     def index
         @categories = Category.all
@@ -22,7 +22,7 @@ class Admin::CategoriesController < AdminController
     end
     
     def create
-        @category = Category.new
+        @category = Category.new(category_params)
         
         respond_to do |format|
             if @category.save
@@ -51,21 +51,21 @@ class Admin::CategoriesController < AdminController
     
     def destroy 
      if @category.delete
-          redirect_to admin_categories_path, notice: "Kategoria usuniety"
+          redirect_to admin_categories_path, notice: "Category Deleted"
       else
-        redirect_to admin_categories_path, notice: "Wystapil problem przy usuaniu"
+        redirect_to admin_categories_path, notice: "Error while deleting"
      end
     end
     
     protected
     
     def set_category
-        (params[:id])
+        @category = Category.find(params[:id])  
     end
     
     
     def category_params
-        params.require(:category)
+        params.require(:category).permit(:name)
     end
     
     
