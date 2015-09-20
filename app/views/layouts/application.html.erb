@@ -1,28 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Rails project</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', media: 'all'  %>
-  <%= stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', media: 'all' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', media: 'all' %>
-  
+  <head>
+    <title>Rails project</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css', media: 'all' %>
+    <%= stylesheet_link_tag    'https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css', media: 'all' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', media: 'all' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <style>
+   body {
+    background-color: white;
+    
+   }
+  </style>
+  <body>
+      <%= render 'layouts/application_nav' %>
+      <img src="https://scontent-fra3-1.xx.fbcdn.net/hphotos-xtf1/t31.0-8/11838761_877601218983307_6507142150479228825_o.jpg" />
+      <div class="container">massages: /admin is working</div>
+      <div class="container">
+       <div class="col-sm-9">
+         <div> 
+         <h3> Post1 </h3>
+         <p>
+          Droga szlachto!</br>
+          Ród królewski wszystkim wobec i każdemu z osobna, komu to widzieć należy, oznajmia, iż wyjazd do królestwa naszego nastąpi dnia lipca piątego gdy słońce wzejdzie już wysoko nad horyzont, kwadrans i jego trzecią część po siódmym tego dnia biciu zegara. Gołoto! Nie przystaje Wam na Głównym Dworcu się pojawić. Miejcie jednak ten zaszczyt – spotkajmy się na zachodzie.
+          --Spotykamy się 5 lipca 2015 o godzinie 7:20 na Dworcu Zachodnim PKP--</br>
+          Published ............1
+         </p>
+         </div>
+         <div> 
+         <h3> Post2 </h3>
+         <p>
+          Droga szlachto!</br>
+          Ród królewski wszystkim wobec i każdemu z osobna, komu to widzieć należy, oznajmia, iż wyjazd do królestwa naszego nastąpi dnia lipca piątego gdy słońce wzejdzie już wysoko nad horyzont, kwadrans i jego trzecią część po siódmym tego dnia biciu zegara. Gołoto! Nie przystaje Wam na Głównym Dworcu się pojawić. Miejcie jednak ten zaszczyt – spotkajmy się na zachodzie.
+          --Spotykamy się 5 lipca 2015 o godzinie 7:20 na Dworcu Zachodnim PKP--</br>
+          Published .............2
+         </p>
+         </div>
+         <div> 
+         <h3> Post3 </h3>
+         <p>
+          Droga szlachto!</br>
+          Ród królewski wszystkim wobec i każdemu z osobna, komu to widzieć należy, oznajmia, iż wyjazd do królestwa naszego nastąpi dnia lipca piątego gdy słońce wzejdzie już wysoko nad horyzont, kwadrans i jego trzecią część po siódmym tego dnia biciu zegara. Gołoto! Nie przystaje Wam na Głównym Dworcu się pojawić. Miejcie jednak ten zaszczyt – spotkajmy się na zachodzie.
+          --Spotykamy się 5 lipca 2015 o godzinie 7:20 na Dworcu Zachodnim PKP--</br>
+          Published .............3
+         </p>
+         </div>
+         
+       </div>
+       <div class="col-sm-3">
+          TEKST TEKST TEKST TEKST TEKST TEKST TEKST TEKST TEKST TEKST
+       </div>
+      </div>
 
-  <%= csrf_meta_tags %>
-</head>
-<body>
-  
-  <h1> <i class="fa fa-gg"></i> Ruby is fun !</h1>
-  <p>
-  TO DO:  </br>
-  /admin login: </br>
-  login: admin </br>
-  password: password </br>
-  </p>
-
-
-<%= yield %>
-
-</body>
+  </body>
 </html>
