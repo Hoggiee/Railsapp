@@ -7,7 +7,8 @@ class PostsController < ApplicationController
     
     def show
         respond_to do |format|
-           format.html 
+           format.html
+           format.json
         end    
     end
     

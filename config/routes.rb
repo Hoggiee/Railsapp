@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
   
   root 'pages#index'
-  
+    resources :categories
+    resources :posts
   
   get '/admin', to: "admin#index"
   
