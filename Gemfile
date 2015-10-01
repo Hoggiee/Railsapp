@@ -34,9 +34,10 @@ group :development, :test do
   gem 'pry'
   gem 'simple_form'
 end
-
+  gem "font-awesome-rails"
   gem "haml-rails"
   gem "noty-rails"
+  gem 'bootstrap-sass', '~> 3.3.5'
   gem "git"
   gem "select2-rails"
   gem "devise"
