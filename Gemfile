@@ -32,8 +32,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 group :development, :test do
   gem 'rspec-rails', '~> 3.0'
   gem 'pry'
-  gem 'simple_form'
 end
+  gem 'simple_form'
   gem "font-awesome-rails"
   gem "haml-rails"
   gem "noty-rails"
