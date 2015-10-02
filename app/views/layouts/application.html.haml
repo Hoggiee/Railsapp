@@ -9,4 +9,6 @@
     = javascript_include_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', media: 'all'
     = csrf_meta_tags
   %body
+    = render 'layouts/application_nav'
+    = image_tag "banner.jpg"
     = yield
