@@ -22,5 +22,9 @@
         Ród królewski wszystkim wobec i każdemu z osobna, komu to widzieć należy, oznajmia, iż wyjazd do królestwa naszego nastąpi dnia lipca piątego gdy słońce wzejdzie już wysoko nad horyzont, kwadrans i jego trzecią część po siódmym tego dnia biciu zegara. Gołoto! Nie przystaje Wam na Głównym Dworcu się pojawić. Miejcie jednak ten zaszczyt – spotkajmy się na zachodzie.
         \--Spotykamy się 5 lipca 2015 o godzinie 7:20 na Dworcu Zachodnim PKP--
         Published .............3
+    %ul
+    - @posts.each do |post|
+      %li= link_to post.title, admin_post_url(post)
+      
   .col-sm-3
     TEKST TEKST TEKST TEKST TEKST TEKST TEKST TEKST TEKST TEKST
