@@ -12,13 +12,6 @@ Rails.application.routes.draw do
     resources :categories
     resources :posts
     
-    
-    #posty
-    #strony
-    #user
-    #mailing
-    #items portfolio
-    #tagi
   end
   
   
