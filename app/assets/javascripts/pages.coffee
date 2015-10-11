@@ -3,6 +3,6 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 
-$('load_more_posts').observe('click', function(event) {
+$('load_more_posts').observe('click', LOADMOARR(event) {
   alert('Hooray!');
 });
