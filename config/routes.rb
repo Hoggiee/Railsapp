@@ -3,6 +3,12 @@ Rails.application.routes.draw do
   root 'pages#index'
     resources :categories
     resources :posts
+    
+    resources :pages do
+      member do
+       get 'load_more_posts'
+     end
+    end
   
   get '/admin', to: "admin#index"
   
