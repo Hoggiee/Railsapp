@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     resources :posts
     
     resources :pages do
-      get 'load_more_posts', on::member
+      get 'load_more_posts', on: :member
     end
   
   get '/admin', to: "admin#index"
