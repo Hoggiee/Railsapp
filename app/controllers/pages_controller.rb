@@ -5,8 +5,10 @@ class PagesController < ApplicationController
     end
     
     def load_more_posts
+        @posts = Post.all
         respond_to do |format|
+           format.html
            format.json
-        end
+        end  
     end
 end

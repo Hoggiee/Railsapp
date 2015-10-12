@@ -1,3 +1,7 @@
-$('load-more-posts').click(function (event) {
+$(function() {
+    
+$('.load-more-button').click(function () {
   alert('loadmoarposts!');
+});
+
 });
