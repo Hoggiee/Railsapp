@@ -15,7 +15,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-$('loadmorebutton').observe('click', function (event) {
-  alert('loadmoarposts!');
-});

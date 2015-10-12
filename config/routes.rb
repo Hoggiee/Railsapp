@@ -5,16 +5,13 @@ Rails.application.routes.draw do
     resources :posts
     
     resources :pages do
-      member do
-       get 'load_more_posts'
-     end
+      get 'load_more_posts', on::member
     end
   
   get '/admin', to: "admin#index"
   
   namespace :admin do
-    #categories
-    
+
     resources :categories
     resources :posts
     
