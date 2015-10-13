@@ -1,4 +1,6 @@
-- @posts.each do |post|
-  %div
-    %p= post.title
-    %p= post.body
+.col-sm-9.posts-list
+  - @posts.each do |post|
+    %div.post-item{data: { id: post.id }}
+      %p= post.title
+      %p= post.body
+  %button.btn.btn-success.load-more-button{:type => "button"} Load More  

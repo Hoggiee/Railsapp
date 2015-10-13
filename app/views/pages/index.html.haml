@@ -1,11 +1,12 @@
 .container massages: /admin is working
 .container
-  .col-sm-9
+  .col-sm-9.posts-list
     - @posts.each do |post|
-      %div
+      %div.post-item{data: { id: post.id }}
         %p= post.title
         %p= post.body
     %button.btn.btn-success.load-more-button{:type => "button"} Load More  
+    
   .col-sm-3
     TEKST TEKST TEKST TEKST TEKST TEKST TEKST TEKST TEKST TEKST
     
