@@ -6,11 +6,7 @@ class PagesController < ApplicationController
     end
     
     def load_more_posts
-        @posts.each do |post|
-            if post[:id] < params[:id]
-                @posts = Post.all.limit(6)
-            end
-        end
+        @posts = Post.where("id > ?", params[:highestId]).limit(3)
         
         respond_to do |format|
            format.html

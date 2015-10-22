@@ -1,7 +1,6 @@
 $(function() {
 $('.load-more-button').click(function () {
   alert('loadmoarposts!');
-
 });
 
 
@@ -14,10 +13,8 @@ function dataPost(){
    alert('Error!');
    }
 });
-   
-   
-   
 }
+
 
 function findHighestId(){
    var highest = 0, current_id;
