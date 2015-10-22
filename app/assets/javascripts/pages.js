@@ -4,7 +4,6 @@ $('.load-more-button').click(function () {
 
 });
 
-var highestId
 
 function dataPost(){
    $.post( "pages/load_more_posts", { highestId: findHighestId() }, function(data, status) {
