@@ -6,11 +6,7 @@ class PagesController < ApplicationController
     end
     
     def load_more_posts
-        @posts = Post.where("id > ?", params[:highestId]).limit(3)
-        
-        respond_to do |format|
-           format.html
-           format.json
-        end
+        @posts = Post.where("id > ?", params[:highest_id]).limit(3)
+        render :layout => false
     end
 end
