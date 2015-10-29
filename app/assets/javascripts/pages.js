@@ -4,7 +4,7 @@ $('.load-more-button').click(function () {
    $(".post-item").each( function()
    {
       current_id = parseInt($(this,10).attr('data-id'));
-      if (current_id < highest)
+      if (current_id > highest)
       {
          highest = current_id;
       }
@@ -16,7 +16,8 @@ $('.load-more-button').click(function () {
 function dataPost(){
    $.post( "pages/load_more_posts", { highest_id: highest }, function(data, status) {
    if(status == 'success') {
-   $('#pages').append("<%= escape_javascript(render :layout=>false, :post => @posts  %>");
+   alert('datapost')
+   $.append(data);
    }
    else {
    alert('Error!');
