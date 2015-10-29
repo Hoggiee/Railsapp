@@ -16,7 +16,7 @@ $('.load-more-button').click(function () {
 function dataPost(){
    $.post( "pages/load_more_posts", { highest_id: highest }, function(data, status) {
    if(status == 'success') {
-   $('#pages').append("<%= escape_javascript(render :post => @posts  %>");
+   $('#pages').append("<%= escape_javascript(render :layout=>false, :post => @posts  %>");
    }
    else {
    alert('Error!');
