@@ -2,7 +2,7 @@ class PagesController < ApplicationController
     
     
     def index
-        @posts = Post.all.limit(6)
+        @posts = Post.all.limit(4)
     end
     
     def load_more_posts
