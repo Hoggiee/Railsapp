@@ -5,7 +5,7 @@ $('.load-more-button').click(function () {
 
 
 function dataPost(){
-   $.post( "pages/load_more_posts", { highest_id: findHighestId() }, function(data, status) {
+   $.post( "pages/load_more_posts", { lowest_id: findLowestId() }, function(data, status) {
    if(status == 'success') {
    $('.posts-list').append(data);
    }
@@ -16,16 +16,16 @@ function dataPost(){
 }
 
 
-function findHighestId(){
-   var highest = 0, current_id;
+function findLowestId(){
+   var current_id, lowest = 10000;
    $(".post-item").each(function()
    {
       current_id = parseInt($(this,10).attr('data-id'));
-      if (current_id > highest)
+      if (current_id < lowest)
       {
-         highest = current_id;
+         lowest = current_id;
       }
    });
-   return highest;
+   return lowest;
 }
 });
