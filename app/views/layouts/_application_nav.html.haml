@@ -1,47 +1,48 @@
 %nav.navbar.navbar-default
-  .container-fluid
-    / Brand and toggle get grouped for better mobile display
-    .navbar-header
-      %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      %a.navbar-brand{:href => "#"} Strona Główna
-    / Collect the nav links, forms, and other content for toggling
-    #bs-example-navbar-collapse-1.collapse.navbar-collapse
-      %ul.nav.navbar-nav
-        %li.active
-          %a{:href => "#"}
-            Kim jesteśmy?
-            %span.sr-only (current)
-        %li.dropdown
-          %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
-            Nasze drużyny
-            %span.caret
-          %ul.dropdown-menu
-            %li
-              %a{:href => "#"} Gromada Zuchowa
-            %li.divider{:role => "separator"}
-            %li
-              %a{:href => "#"} Dziupla
-            %li
-              %a{:href => "#"} Puzzle
-            %li.divider{:role => "separator"}
-            %li
-              %a{:href => "#"} Dysk
-            %li
-              %a{:href => "#"} Berserk
-            %li.divider{:role => "separator"}
-            %li
-              %a{:href => "#"} Emilki
-            %li
-              %a{:href => "#"} Prężni
-        %li
-          %a{:href => "#"} Obóz 2015
-        %li
-          %a{:href => "#"} Przydatne
-        %li
-          %a{:href => "#"} Kontakt
-    / /.navbar-collapse
-  / /.container-fluid
+  .container  
+    .container-fluid
+      / Brand and toggle get grouped for better mobile display
+      .navbar-header
+        %button.navbar-toggle.collapsed{"aria-expanded" => "false", "data-target" => "#bs-example-navbar-collapse-1", "data-toggle" => "collapse", :type => "button"}
+          %span.sr-only Toggle navigation
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        %a.navbar-brand{:href => "#"} Strona Główna
+      / Collect the nav links, forms, and other content for toggling
+      #bs-example-navbar-collapse-1.collapse.navbar-collapse
+        %ul.nav.navbar-nav
+          %li.active
+            %a{:href => "#"}
+              Kim jesteśmy?
+              %span.sr-only (current)
+          %li.dropdown
+            %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+              Nasze drużyny
+              %span.caret
+            %ul.dropdown-menu
+              %li
+                %a{:href => "#"} Gromada Zuchowa
+              %li.divider{:role => "separator"}
+              %li
+                %a{:href => "#"} Dziupla
+              %li
+                %a{:href => "#"} Puzzle
+              %li.divider{:role => "separator"}
+              %li
+                %a{:href => "#"} Dysk
+              %li
+                %a{:href => "#"} Berserk
+              %li.divider{:role => "separator"}
+              %li
+                %a{:href => "#"} Emilki
+              %li
+                %a{:href => "#"} Prężni
+          %li
+            %a{:href => "#"} Obóz 2015
+          %li
+            %a{:href => "#"} Przydatne
+          %li
+            %a{:href => "#"} Kontakt
+      / /.navbar-collapse
+    / /.container-fluid
