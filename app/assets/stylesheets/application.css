@@ -16,3 +16,68 @@
  *
  */
 
+ 
+ .custom-text{
+  opacity: 0.3;
+  font-size: 10px;
+  animation: pulseback 1s;
+  animation: growback 1s;
+ }
+ .custom-text:hover{
+  opacity: 1.0;
+  font-size: 25px;
+  animation: pulse 1s;
+  animation: grow 1s;
+ }
+ 
+ .custom-footer{
+  margin-top: 60px;
+ }
+ 
+ .custom-icon{
+  opacity: 0.1;
+  animation: pulseback 1s;
+  
+ }
+ .custom-icon:hover{
+  opacity: 1.0;
+  animation: pulse 1s;
+ }
+ 
+ @keyframes pulse {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1.0;
+  }
+ }
+ 
+ @keyframes pulseback {
+  0% {
+   opacity: 1.0;
+  }
+  100% {
+   opacity: 0.1;
+  }
+ }
+ 
+ @keyframes grow{
+  0% {
+   font-size: 10px;
+  }
+  100% {
+   font-size: 25px;
+  }
+ }
+ 
+ @keyframes growback{
+  0% {
+   font-size: 25px;
+  }
+  100% {
+   font-size: 10px;
+  }
+ }
+  
+  
