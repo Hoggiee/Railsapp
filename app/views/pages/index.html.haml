@@ -1,11 +1,11 @@
-.container massages: /admin is working
-.col-sm-9.posts-list
+
+.col-sm-9.posts-list.custom-main-top
   - @posts.each do |post|
-    %div.post-item{data: { id: post.id }}
-      %p= post.title
-      %p= post.body
-.col-sm-3
+    %div.post-item.panel.panel-success{data: { id: post.id }}
+      %p.panel-heading= post.title
+      %p.panel-body= post.body
+.col-sm-3.panel.panel-success.custom-main-top
   SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR SIDEBAR 
-.col-sm-9
+.col-sm-12.custom-main-bottom
   %button.btn.btn-success.load-more-button{:type => "button"} Load More
     

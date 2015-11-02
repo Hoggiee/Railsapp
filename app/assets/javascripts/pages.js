@@ -14,17 +14,8 @@ $(function() {
    });
    }
    
-   
    function findLowestId(){
-      var current_id, lowest = 10000;
-      $(".post-item").each(function()
-      {
-         current_id = parseInt($(this,10).attr('data-id'));
-         if (current_id < lowest)
-         {
-            lowest = current_id;
-         }
-      });
-      return lowest;
+      var lowestId = $('.post-item').last().attr('data-id');
+      return parseInt(lowestId, 10);
    }
 });

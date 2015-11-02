@@ -15,7 +15,26 @@
  *= require font-awesome
  *
  */
-
+ 
+ .custom-main-top{
+  margin-top: 20px;
+ }
+ 
+ .custom-main-bottom{
+  margin-bottom: 20px;
+ }
+ 
+ .custom-container{
+  background-color: rgba(255,255,255,0.9);
+ }
+ 
+ .custom-main{
+  background-image: url("/assets/background.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+  margin-top: -20px;
+ }
  
  .custom-text{
   opacity: 0.3;
@@ -31,7 +50,7 @@
  }
  
  .custom-footer{
-  margin-top: 60px;
+  margin-top: 0px;
  }
  
  .custom-icon{
