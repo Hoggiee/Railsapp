@@ -8,41 +8,41 @@
           %span.icon-bar
           %span.icon-bar
           %span.icon-bar
-        %a.navbar-brand{:href => "#"} Strona Główna
+        %a.navbar-brand{:href => '#'} Strona Główna
       / Collect the nav links, forms, and other content for toggling
       #bs-example-navbar-collapse-1.collapse.navbar-collapse
         %ul.nav.navbar-nav
-          %li.active
-            %a{:href => "#"}
-              Kim jesteśmy?
-              %span.sr-only (current)
+          %li
+            %span.sr-only (current)
+          %li
+            = link_to "Kim jesteśmy?", pages_about_path
           %li.dropdown
-            %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+            %a.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"} 
               Nasze drużyny
               %span.caret
             %ul.dropdown-menu
               %li
-                %a{:href => "#"} Gromada Zuchowa
+                = link_to "Gromada Zuchowa", pages_gromada_path
               %li.divider{:role => "separator"}
               %li
-                %a{:href => "#"} Dziupla
+                = link_to "Dziupla", pages_dziupla_path
               %li
-                %a{:href => "#"} Puzzle
+                = link_to "Puzzle", pages_puzzle_path
               %li.divider{:role => "separator"}
               %li
-                %a{:href => "#"} Dysk
+                = link_to "DYSK", pages_dysk_path
               %li
-                %a{:href => "#"} Berserk
+                = link_to "Berserk", pages_berserk_path
               %li.divider{:role => "separator"}
               %li
-                %a{:href => "#"} Emilki
+                = link_to "Emilki", pages_emilki_path
               %li
-                %a{:href => "#"} Prężni
+                = link_to "Prężni", pages_prezni_path
           %li
-            %a{:href => "#"} Obóz 2015
+            = link_to "Zimowisko 2016", pages_oboz_path
           %li
-            %a{:href => "#"} Przydatne
-          %li
-            %a{:href => "#"} Kontakt
+            = link_to "Przydatne", pages_przydatne_path
+          %li.active
+            = link_to "Kontakt", pages_kontakt_path
       / /.navbar-collapse
     / /.container-fluid

@@ -12,20 +12,7 @@
     = render 'layouts/admin_nav'
     .container
       .col-sm-2
-        %ul.nav.nav-pills.nav-stacked
-          %li.active
-            = link_to t('admin.menu.dashboard'), admin_path
-          %li
-            = link_to t('admin.menu.posts'), admin_posts_path
-          %li
-            = link_to t('admin.menu.categories'), admin_categories_path
-          %li
-            %a{ :href=>"#" } Another
-          %li
-            %a{ :href=>"#" } Another
-          %li
-            %a{ :href=>"#" } Another
-
+        =render 'layouts/admin_side_nav'
       .col-sm-10
         %ol.breadcrumb
           %li
