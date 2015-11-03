@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     resources :categories
     resources :posts
     
+    get 'pages/about'
+    
     resources :pages do
       post 'load_more_posts', on: :collection
     end

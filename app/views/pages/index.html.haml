@@ -1,4 +1,4 @@
-
+.container /admin is working
 .col-sm-8.posts-list.custom-main-top
   - @posts.each do |post|
     %div.post-item.panel.panel-success{data: { id: post.id }}
@@ -8,4 +8,3 @@
   = render 'layouts/facebook_plugin'
 .col-sm-12.custom-main-bottom
   %button.btn.btn-success.load-more-button{:type => "button"} Load More
-    
