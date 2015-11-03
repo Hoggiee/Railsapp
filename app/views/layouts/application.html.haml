@@ -12,6 +12,10 @@
     = image_tag "banner.jpg"
     = render 'layouts/application_nav'
     %div.custom-main
-      .container.custom-container
-        = yield
+      .container.custom-bgcontainer
+        .container visit /admin, /pages/about
+        .col-sm-8.custom-main-top.custom-main-bottom
+          = yield
+        .col-sm-4.panel.panel-success.custom-main-top
+          = render 'layouts/facebook_plugin'
     = render 'layouts/footer_nav'

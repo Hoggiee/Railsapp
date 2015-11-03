@@ -1,10 +1,6 @@
-.container /admin is working
-.col-sm-8.posts-list.custom-main-top
+%div.posts-list
   - @posts.each do |post|
     %div.post-item.panel.panel-success{data: { id: post.id }}
       %p.panel-heading= post.title
       %p.panel-body= post.body
-.col-sm-4.panel.panel-success.custom-main-top
-  = render 'layouts/facebook_plugin'
-.col-sm-12.custom-main-bottom
-  %button.btn.btn-success.load-more-button{:type => "button"} Load More
+%button.btn.btn-success.load-more-button{:type => "button"} Load More

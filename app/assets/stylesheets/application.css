@@ -16,18 +16,23 @@
  *
  */
  
+ /* Bootstrap margin fixing - banner */
  .custom-main-top{
   margin-top: 20px;
  }
  
+ /* Bootstrap margin fixing - footer */
  .custom-main-bottom{
   margin-bottom: 20px;
  }
  
- .custom-container{
+ /* Page container */
+ .custom-bgcontainer{
   background-color: rgba(255,255,255,0.9);
  }
  
+ 
+ /* Background */
  .custom-main{
   background-image: url("/assets/background.jpg");
   background-attachment: fixed;
@@ -35,6 +40,8 @@
   background-size: 100%;
   margin-top: -20px;
  }
+ 
+ /* FOOTER */
  
  .custom-text{
   opacity: 0.3;
