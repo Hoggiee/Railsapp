@@ -9,6 +9,13 @@
     = javascript_include_tag 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js', media: 'all'
     = csrf_meta_tags
   %body
-    = render 'layouts/application_nav'
     = image_tag "banner.jpg"
-    = yield
+    = render 'layouts/application_nav'
+    %div.custom-main
+      .container.custom-bgcontainer
+        .container visit /admin, /pages/about
+        .col-sm-8.custom-main-top.custom-main-bottom
+          = yield
+        .col-sm-4.panel.panel-success.custom-main-top
+          = render 'layouts/facebook_plugin'
+    = render 'layouts/footer_nav'

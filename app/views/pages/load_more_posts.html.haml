@@ -1,0 +1,4 @@
+- @posts.each do |post|
+  %div.post-item.panel.panel-success{data: { id: post.id }}
+    %p.panel-heading= post.title
+    %p.panel-body= post.body

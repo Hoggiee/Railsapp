@@ -1,0 +1,4 @@
+= link_to "Wszystkie posty", admin_posts_path
+%h3= @post.title
+%h4= @post.body
+= link_to "Usuń post", admin_post_path(@post), :method => :delete

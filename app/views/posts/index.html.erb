@@ -1,9 +1,0 @@
-<h1>Lista postów</h1>
-<ul>
-    
-    <% @posts.each do |post| %>
-        <li><%= link_to post.title, post_url(post) %></li>
-    <% end %>
-    
-    
-</ul>

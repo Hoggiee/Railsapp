@@ -1,26 +1,6 @@
-.container massages: /admin is working
-.container
-  .col-sm-9
-    %div
-      %h3 Post1
-      %p
-        Droga szlachto!
-        Ród królewski wszystkim wobec i każdemu z osobna, komu to widzieć należy, oznajmia, iż wyjazd do królestwa naszego nastąpi dnia lipca piątego gdy słońce wzejdzie już wysoko nad horyzont, kwadrans i jego trzecią część po siódmym tego dnia biciu zegara. Gołoto! Nie przystaje Wam na Głównym Dworcu się pojawić. Miejcie jednak ten zaszczyt – spotkajmy się na zachodzie.
-        \--Spotykamy się 5 lipca 2015 o godzinie 7:20 na Dworcu Zachodnim PKP--
-        Published ............1
-    %div
-      %h3 Post2
-      %p
-        Droga szlachto!
-        Ród królewski wszystkim wobec i każdemu z osobna, komu to widzieć należy, oznajmia, iż wyjazd do królestwa naszego nastąpi dnia lipca piątego gdy słońce wzejdzie już wysoko nad horyzont, kwadrans i jego trzecią część po siódmym tego dnia biciu zegara. Gołoto! Nie przystaje Wam na Głównym Dworcu się pojawić. Miejcie jednak ten zaszczyt – spotkajmy się na zachodzie.
-        \--Spotykamy się 5 lipca 2015 o godzinie 7:20 na Dworcu Zachodnim PKP--
-        Published .............2
-    %div
-      %h3 Post3
-      %p
-        Droga szlachto!
-        Ród królewski wszystkim wobec i każdemu z osobna, komu to widzieć należy, oznajmia, iż wyjazd do królestwa naszego nastąpi dnia lipca piątego gdy słońce wzejdzie już wysoko nad horyzont, kwadrans i jego trzecią część po siódmym tego dnia biciu zegara. Gołoto! Nie przystaje Wam na Głównym Dworcu się pojawić. Miejcie jednak ten zaszczyt – spotkajmy się na zachodzie.
-        \--Spotykamy się 5 lipca 2015 o godzinie 7:20 na Dworcu Zachodnim PKP--
-        Published .............3
-  .col-sm-3
-    TEKST TEKST TEKST TEKST TEKST TEKST TEKST TEKST TEKST TEKST
+%div.posts-list
+  - @posts.each do |post|
+    %div.post-item.panel.panel-success{data: { id: post.id }}
+      %p.panel-heading= post.title
+      %p.panel-body= post.body
+%button.btn.btn-success.load-more-button{:type => "button"} Load More

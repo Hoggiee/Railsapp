@@ -3,22 +3,31 @@ Rails.application.routes.draw do
   root 'pages#index'
     resources :categories
     resources :posts
+    
+    get 'pages/about'
+    get 'pages/oboz'
+    get 'pages/przydatne'
+    get 'pages/kontakt'
+    
+    get 'pages/gromada'
+    get 'pages/dziupla'
+    get 'pages/puzzle'
+    get 'pages/dysk'
+    get 'pages/berserk'
+    get 'pages/emilki'
+    get 'pages/prezni'
+    
+    resources :pages do
+      post 'load_more_posts', on: :collection
+    end
   
   get '/admin', to: "admin#index"
   
   namespace :admin do
-    #categories
-    
+
     resources :categories
     resources :posts
     
-    
-    #posty
-    #strony
-    #user
-    #mailing
-    #items portfolio
-    #tagi
   end
   
   
