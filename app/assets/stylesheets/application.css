@@ -16,6 +16,11 @@
  *
  */
  
+ /* Bg color for banner */
+ .custom-bgbanner{
+  background-color: #42903A;
+ }
+ 
  /* Bootstrap margin fixing - banner */
  .custom-main-top{
   margin-top: 20px;
