@@ -16,6 +16,11 @@
  *
  */
  
+ 
+ body{
+  background-color: #42903A !important;
+ }
+ 
  /* Bg color for banner */
  .custom-bgbanner{
   background-color: #42903A;
@@ -42,27 +47,24 @@
   background-image: url("/assets/background.jpg");
   background-attachment: fixed;
   background-position: center;
-  background-size: 100%;
+  background-size: cover;
   margin-top: -20px;
  }
  
  /* FOOTER */
- 
- .custom-text{
+
+  .custom-text{
   opacity: 0.3;
   font-size: 10px;
-  animation: pulseback 1s;
-  animation: growback 1s;
  }
  .custom-text:hover{
   opacity: 1.0;
-  font-size: 25px;
-  animation: pulse 1s;
-  animation: grow 1s;
+  font-size: 10px;
  }
  
  .custom-footer{
   margin-top: 0px;
+  margin-bottom: 0px !important;
  }
  
  .custom-icon{
@@ -92,23 +94,6 @@
    opacity: 0.1;
   }
  }
- 
- @keyframes grow{
-  0% {
-   font-size: 10px;
-  }
-  100% {
-   font-size: 25px;
-  }
- }
- 
- @keyframes growback{
-  0% {
-   font-size: 25px;
-  }
-  100% {
-   font-size: 10px;
-  }
- }
+
   
   
